@@ -16,18 +16,23 @@ characteristics play a role they legally and ethically should not.
 
 ## Interactive App
 
-This project includes a live prediction tool built with Streamlit:
+This project includes a live prediction tool — the **Illinois Mortgage Approval Predictor**.
+Enter applicant details and instantly receive an estimated approval or denial probability,
+based on the XGBoost model trained on 119,663 real mortgage applications.
 
-**Illinois Mortgage Approval Predictor** — enter applicant details and
-receive an estimated approval or denial probability based on the trained
-XGBoost model.
+![App Demo](mortgage_approval_predictor.gif)
 
-To run locally:
+To run the app locally:
 
-```
+1. Clone this repository
+2. Download the HMDA Illinois 2024 dataset from the
+   [FFIEC HMDA Data Browser](https://ffiec.cfpb.gov/data-browser/)
+   and save it as `state_IL.csv` in the project folder
+3. Run the full notebook `GMDA_IL.ipynb` to train the model
+4. Then start the app:
+
 pip install -r requirements.txt
 streamlit run app.py
-```
 
 ---
 
